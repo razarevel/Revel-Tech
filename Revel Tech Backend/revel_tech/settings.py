@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+AUTH_USER_MODEL = 'Users.User'
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "like",
     "feature_products",
     "best_seller",
+    "Users"
 ]
 
 MIDDLEWARE = [
@@ -79,8 +80,11 @@ WSGI_APPLICATION = "revel_tech.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "revel_tech",
+        "HOST": "localhost",
+        "USER": "root",
+        "PASSWORD": "Aliraza@2022"
     }
 }
 
