@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "like",
     "feature_products",
     "best_seller",
-    "Users"
+    "Users",
+    "blogs"
 ]
 
 MIDDLEWARE = [
