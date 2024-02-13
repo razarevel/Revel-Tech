@@ -1,10 +1,9 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializer import featureCollectionSerializer
+from .serializer import featureProductSerializer
 from .models import Collection
 from .models import Product
-import os
-import json
 # Create your views here.
 
 
@@ -16,11 +15,16 @@ def feature_product_collection(request):
 
 
 @api_view()
-def feature_products(request):
-    
-    return Response("ok")
+def feature_products(request, id):
+    query_set = Product.objects.filter(collection_id=id).all()
+    serialer = featureProductSerializer(query_set, many=True)
+    return Response(serialer.data)
 
-
+@api_view()
+def feature_productsbyId(request, id):
+    product = Product.objects.get(pk=id)
+    serialer = featureProductSerializer(product)
+    return Response(serialer.data)
 # directory = '/work/Revel Tech/JSON'
 
 #     # Get list of files in the directory

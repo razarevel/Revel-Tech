@@ -7,7 +7,7 @@ class featureCollectionSerializer(serializers.ModelSerializer):
         model = Collection
         fields = "__all__"
     
-class festureProductSerializer(serializers.ModelSerializer):
+class featureProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        field = "__all__"
+        fields = "__all__"
