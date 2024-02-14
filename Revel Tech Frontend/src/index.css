@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.swiper-nav-btn {
+.swiper-container {
+  overflow: visible !important; /* Ensures the navigation buttons are not hidden */
 }
+
+.swiper-slide {
+  overflow: hidden; /* Hides anything outside the slide */
+}
+

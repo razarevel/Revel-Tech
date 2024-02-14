@@ -9,7 +9,6 @@ from rest_framework.decorators import api_view
 def best_seller(request):
     queryset = Collection.objects.all()
     serialer = sellerCollectionSerializer(queryset, many=True)
-    print(serialer.data)
     return Response(serialer.data)
 
 
