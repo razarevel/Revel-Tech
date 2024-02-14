@@ -25,11 +25,29 @@ export default function BlogSlider() {
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const sliderPerView = (w: number) => {
+    if (w <= 620) return 1;
+    if (w >= 620 && w <= 1024) return 2;
+    return 3;
+  };
   return (
     <div className="container mx-auto w-full h-full relative px-6 overflow-hidden ">
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerView={sliderPerView(windowWidth)}
         loop={true}
         modules={[Navigation, Pagination]}
         className="swiper-container"
