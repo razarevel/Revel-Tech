@@ -20,6 +20,7 @@ def feature_products(request, id):
     serialer = featureProductSerializer(query_set, many=True)
     return Response(serialer.data)
 
+
 @api_view()
 def feature_productsbyId(request, id):
     product = Product.objects.get(pk=id)
