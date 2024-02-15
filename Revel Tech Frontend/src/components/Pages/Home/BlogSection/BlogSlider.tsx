@@ -44,7 +44,7 @@ export default function BlogSlider() {
     return 3;
   };
   return (
-    <div className="container mx-auto w-full h-full relative px-6 overflow-hidden ">
+    <div className="container mx-auto w-full h-full relative px-6 overflow-hidden">
       <Swiper
         spaceBetween={30}
         slidesPerView={sliderPerView(windowWidth)}
@@ -53,7 +53,7 @@ export default function BlogSlider() {
         className="swiper-container"
       >
         {data.map((el, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <BlogCard
               key={index}
               img={el.img}
