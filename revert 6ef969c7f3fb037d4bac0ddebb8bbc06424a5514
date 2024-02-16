@@ -1,0 +1,71 @@
+[33mcommit e87cdbc20c2375e0352dacef6dec13ececb1acc5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 17 04:14:47 2024 +0500
+
+    footer
+
+[33mcommit 6ef969c7f3fb037d4bac0ddebb8bbc06424a5514[m
+Author: razarevel <you@example.com>
+Date:   Thu Feb 15 21:19:18 2024 +0500
+
+    companies slider
+
+[33mcommit 21f83d8e3394994d062e270fb251cb761bb57962[m
+Author: razarevel <you@example.com>
+Date:   Thu Feb 15 03:27:42 2024 +0500
+
+    info and blog
+
+[33mcommit 43c8069cf9e228bef5c146c3d53f869e9b80fc8a[m
+Author: razarevel <you@example.com>
+Date:   Thu Feb 15 02:36:50 2024 +0500
+
+    corses
+
+[33mcommit 06abf2847d3e9308b1cf1daf3f0d4076112daaad[m
+Author: razarevel <you@example.com>
+Date:   Wed Feb 14 22:10:42 2024 +0500
+
+    swiper
+
+[33mcommit cc17ca6465e267292b21bf81e36b2ca36a320548[m
+Author: razarevel <you@example.com>
+Date:   Tue Feb 13 22:18:17 2024 +0500
+
+    feature_product api's
+
+[33mcommit b3c78135060cbd35724205619356a924dc0cf25d[m
+Author: razarevel <you@example.com>
+Date:   Tue Feb 13 21:32:22 2024 +0500
+
+    Feature product data added to database
+
+[33mcommit c60d254a65e7cf5e974a6ed957326e91c3287141[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 10 16:33:46 2024 +0500
+
+    inserted blog data into database
+
+[33mcommit 984ed4a4eead0e6d556274e677e36a850c9e525a[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 10 03:52:49 2024 +0500
+
+    small changes
+
+[33mcommit f0297635e3602400bac2902b0e86d09e230876c5[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 10 03:52:37 2024 +0500
+
+    creating the mirgration
+
+[33mcommit 851cc870644dc59be8dec85810ada2c4796d38ca[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 10 02:41:01 2024 +0500
+
+    setting up the app in backend
+
+[33mcommit c1a95e1e20e57b568e2f4a5bb8438b945cf0fef6[m
+Author: razarevel <you@example.com>
+Date:   Sat Feb 10 01:16:29 2024 +0500
+
+    first commit
