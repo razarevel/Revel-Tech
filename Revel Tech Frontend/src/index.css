@@ -10,3 +10,11 @@
   overflow: hidden; /* Hides anything outside the slide */
 }
 
+.footer-form {
+  transition: box-shadow 0.3s linear;
+}
+.footer-form:hover {
+  box-shadow: -1px 1px 18px 8px rgba(228, 198, 246, 0.8);
+  -webkit-box-shadow: -1px 1px 18px 8px rgba(228, 198, 246, 0.8);
+  -moz-box-shadow: -1px 1px 18px 8px rgba(228, 198, 246, 0.8);
+}
