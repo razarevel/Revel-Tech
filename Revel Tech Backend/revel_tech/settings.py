@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     "feature_products",
     "best_seller",
     "Users",
-    "blogs"
+    "blogs",
+    "best_offers"
 ]
 
 MIDDLEWARE = [
@@ -86,9 +87,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "revel_tech",
-        "HOST": "localhost",
+        "HOST": "revel-tech.ciygtuk2oij0.eu-west-2.rds.amazonaws.com",
         "USER": "root",
-        "PASSWORD": "Aliraza@2022"
+        "PASSWORD": "Aliraza2022",
+        "PORT" : "3306"
     }
 }
 

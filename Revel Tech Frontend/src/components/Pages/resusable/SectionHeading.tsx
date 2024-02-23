@@ -1,14 +1,18 @@
-export default function BlogHeading() {
+interface Props {
+  heading: string;
+  btnHeading: string;
+}
+export default function SectionHeading({ heading, btnHeading }: Props) {
   return (
     <div className="container mx-auto max-w-7xl space-y-5 md:space-y-0">
       <div className=" flex items-center justify-between flex-col space-y-4 sm:flex-row sm:space-y-0">
-        <h1 className="text-2xl font-medium sm:w-[300px] ">From Our Blog</h1>
+        <h1 className="text-2xl font-medium sm:w-[300px] ">{heading}</h1>
         {/* button */}
         <div className="flex items-center justify-center w-full">
           <div className="border-t border-black w-full  opacity-5 hidden md:block"></div>
           <div className="flex items-center justify-center space-x-3 bg-white h-12 w-52 rounded-full group border shadow-sm hover:bg-black duration-300 cursor-pointer">
             <h1 className="font-semibold opacity-60 group-hover:opacity-100 group-hover:text-white duration-300">
-              View more
+              {btnHeading}
             </h1>
             <svg
               className="opacity-60 group-hover:opacity-100 group-hover:fill-white duration-300"
