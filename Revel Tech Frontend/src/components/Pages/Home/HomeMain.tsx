@@ -5,8 +5,9 @@ import CompaninesMain from "./Companies/CompaniesMain";
 import FooterMain from "./Footer/FooterMain";
 import HdownCard from "./HdownCard/HdownCard";
 import InfoSection from "./InfoSection/InfoSection";
-import TopSectionMain from "./TopSection/TopSectionMain";
 import BestSellerMain from "./BestSellerSection/FeatureMain";
+import BestOfferSection from "./BestOffer/BestOfferSection";
+
 
 export default function HomeMain() {
   return (
@@ -17,6 +18,7 @@ export default function HomeMain() {
       <BestSellerMain />
       <CompaninesMain />
       <BlogSectionMain />
+      <BestOfferSection />
       <InfoSection />
       <FooterMain />
     </>

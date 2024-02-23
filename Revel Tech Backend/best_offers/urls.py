@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import bestOffer
+from . import views
 
 urlpatterns = [
-    path("top_things/", bestOffer)
+    path("top_things/", views.bestOffer),
+
 ]

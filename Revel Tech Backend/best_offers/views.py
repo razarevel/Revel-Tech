@@ -6,7 +6,6 @@ from .models import Top_selling
 from .serializers import serialerBestOffer
 # Create your views here.
 
-
 @api_view()
 def bestOffer(request):
     featureProducts = Feature_product.objects.all()
@@ -15,5 +14,8 @@ def bestOffer(request):
     serialerFeature = serialerBestOffer(featureProducts, many=True)
     serialerRated = serialerBestOffer(topRated, many=True)
     serialerSeller = serialerBestOffer(topSelling, many=True)
-    data = [serialerFeature.data, serialerRated.data, serialerSeller.data]
+    data = [{"heading": "Features Products", "Data": serialerFeature.data},
+            {"heading": "Top Rated Products", "Data": serialerRated.data},
+            {"heading": "Top Selling Products", "Data": serialerSeller.data},
+            ]
     return Response(data)
