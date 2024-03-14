@@ -32,7 +32,7 @@ export default function BestOfferSection() {
               {el.Data.map((el, index) => (
                 <div
                   key={index}
-                  className="flex space-x-3 cursor-pointer group "
+                  className="flex space-x-6 cursor-pointer group"
                 >
                   {/* img */}
                   <div className="p-[1px] bg-gray-200 group-hover:bg-gradient-to-r from-[#C16AF5] to-[#59EDFF]">

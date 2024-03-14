@@ -7,12 +7,28 @@ import HdownCard from "./HdownCard/HdownCard";
 import InfoSection from "./InfoSection/InfoSection";
 import BestSellerMain from "./BestSellerSection/FeatureMain";
 import BestOfferSection from "./BestOffer/BestOfferSection";
-
+import HeroMainSecion from "./HeroMainSection/HeroMainSection";
+import NavDesktop from "./Navbar/NavDesktop/NavDesk";
+import NavMobile from "./Navbar/NavMobile/NavMobile";
+import navZustand from "../../../NavZustand";
+import HTopSection from "./HTopSection/HTopSection";
+import SupDealSec from "./SuperDealSection/SupDealSec";
 
 export default function HomeMain() {
+  const { show, setShow } = navZustand();
+
   return (
-    <>
+    <section
+      onClick={() => {
+        if (show) setShow(false);
+      }}
+    >
+      <NavMobile />
+      <NavDesktop />
+      <HTopSection />
+      <HeroMainSecion />
       <HdownCard />
+      <SupDealSec />
       <FeatureMain />
       <AboveSellCard />
       <BestSellerMain />
@@ -21,6 +37,6 @@ export default function HomeMain() {
       <BestOfferSection />
       <InfoSection />
       <FooterMain />
-    </>
+    </section>
   );
 }

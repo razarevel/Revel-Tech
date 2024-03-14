@@ -9,7 +9,7 @@ export default function HdownCard() {
     { img: img3, heading: "Photography Drone", text: "Sale up to 30%" },
   ];
   return (
-    <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-32">
+    <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 py-32 overflow-hidden">
       {context.map((el, index) => (
         <div
           key={index}
